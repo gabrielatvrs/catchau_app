@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical">
+
+    <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/app_name"
+            android:layout_marginTop="125dp"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:textColor="#E91E63"
+            android:fontFamily="cursive"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/txtTitulo"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Escolha o carro que deseja alugar:"
+              android:textSize="20dp"
+              android:textColor="#333"
+              android:id="@+id/txtSubtitulo"
+              app:layout_constraintTop_toBottomOf="@id/txtTitulo"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toRightOf="parent"
+
+    />
+
+    <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/txtSubtitulo"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="15dp"
+            android:background="#E3E3E3"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            >
+
+<!--        <Button-->
+<!--                android:id="@+id/bttCarregaImg"-->
+<!--                android:text="Selecionar imagem"-->
+<!--                android:background="@color/colorAccent"-->
+<!--                android:textColor="#FFF"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:textSize="20dp"/>-->
+
+        <EditText android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textSize="18dp"
+                  android:id="@+id/dttMontadora"
+                  android:hint="Montadora"
+                  android:layout_margin="8dp" />
+
+        <EditText android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textSize="18dp"
+                  android:id="@+id/dttModelo"
+                  android:hint="Modelo"
+                  android:layout_margin="8dp" />
+
+        <EditText android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textSize="18dp"
+                  android:id="@+id/dttPortas"
+                  android:hint="Quantidade de Portas"
+                  android:inputType="number"
+                  android:layout_margin="8dp" />
+
+        <EditText android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textSize="18dp"
+                  android:id="@+id/dttDataRetirada"
+                  android:hint="Data de Retirada"
+                  android:focusable="false"
+                  android:clickable="true"
+                  android:layout_margin="8dp" />
+
+
+        <EditText android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textSize="18dp"
+                  android:id="@+id/dttLocal"
+                  android:hint="Local de retirada"
+                  android:layout_margin="8dp" />
+
+        <Button android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Buscar"
+                android:textSize="20dp"
+                android:background="@drawable/background_botao"
+                android:textColor="#FFFFFF"
+                android:id="@+id/bttBuscar"
+                android:textAllCaps="false"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
